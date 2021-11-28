@@ -12,6 +12,8 @@ AddEventHandler('nz_ui_enter', function (text, cb)
 end)
 
 
+
+
 function Callback()
 	Citizen.CreateThread(function()
 		while true do
@@ -23,6 +25,7 @@ function Callback()
 		end
 	end)
 end
+
 
 function SetDisplay(bool, text)
     display = bool
