@@ -11,7 +11,7 @@ nz_ui_enter is a FiveM script for a simple input box
 
 #### Installation tutorial
 
-1. Put **nz_ui_enter** into the **resources ** folder
+1. Put **nz_ui_enter** into the **resources** folder
 2. Add a line `ensure nz_ui_enter` to server.cfg
 3. Start the server
 
