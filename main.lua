@@ -8,16 +8,21 @@ RegisterNetEvent('nz_ui_enter')
 AddEventHandler('nz_ui_enter', function (text, cb)
 	SetDisplay(not display, text)
 	cbdata = cb
+	Callback()
 end)
 
-Citizen.CreateThread(function()
-	while true do
-		Citizen.Wait(1000)
-		if msg then
-			menu(cbdata)
+
+function Callback()
+	Citizen.CreateThread(function()
+		while true do
+			Citizen.Wait(1000)
+			if msg then
+				menu(cbdata)
+				break
+			end
 		end
-	end
-end)
+	end)
+end
 
 function SetDisplay(bool, text)
     display = bool
